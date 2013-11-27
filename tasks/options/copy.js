@@ -50,6 +50,14 @@ module.exports = {
       cwd: 'vendor/bootstrap/',
       src: ['fonts/*.{eot,svg,ttf,woff}'],
       dest: 'tmp/result/'
+    }, 
+
+    // Leaflet images
+    {
+      expand: true,
+      cwd: 'vendor/leaflet-stable/',
+      src: ['images/*.png'],
+      dest: 'tmp/result/assets/'
     }]
   },
 
