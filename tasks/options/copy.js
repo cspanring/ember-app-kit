@@ -42,8 +42,15 @@ module.exports = {
     }, {
       src: ['vendor/**/*.js', 'vendor/**/*.css'],
       dest: 'tmp/result/'
-    }
-    ]
+    },
+
+    // Bootstrap fonts
+    {
+      expand: true,
+      cwd: 'vendor/bootstrap/',
+      src: ['fonts/*.{eot,svg,ttf,woff}'],
+      dest: 'tmp/result/'
+    }]
   },
 
   imageminFallback: {
